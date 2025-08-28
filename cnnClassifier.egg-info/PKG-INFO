@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cnnClassifier
+Version: 0.0.1
+Summary: A small package for CNN based classification
+Home-page: https://github.com/yousefre14/Kidney-Diseases-Classification
+Author: yousefre14
+Author-email: yousef.jo.reda14@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Kidney-Diseases-Classification
