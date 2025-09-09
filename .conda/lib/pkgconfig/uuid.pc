@@ -1,0 +1,11 @@
+prefix=/home/yousef/Kidney-Diseases-Classification/.conda
+exec_prefix=/home/yousef/Kidney-Diseases-Classification/.conda
+libdir=/home/yousef/Kidney-Diseases-Classification/.conda/lib
+includedir=/home/yousef/Kidney-Diseases-Classification/.conda/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.32.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

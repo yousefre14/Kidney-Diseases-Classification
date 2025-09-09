@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: cnnClassifier
 Version: 0.0.1
 Summary: A small package for CNN based classification
@@ -10,5 +10,51 @@ Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
 
 # Kidney-Diseases-Classification
+
+
+
+
+# Workflows
+1. update config.yaml
+2. update secrets.yaml
+3. update params.yaml
+4. update the entity
+5. update the configuration manger in src config
+6. update the components
+7. update the pipline
+8. update the main.py
+9. update the dvc.yaml 
+10. app.py
+
+# How to run?
+
+clone the repo 
+```bash
+https://github.com/yousefre14/Kidney-Diseases-Classification
+```
+
+### STEP 01- create a conda env after opening the repo
+```bash
+conda create -n cnncls python=3.8 -y
+```
+
+```bash 
+conda activate cnncls
+```
+
+### STEP 02- install the requirments 
+```bash
+pip install -r requirements.txt
+```
+
+

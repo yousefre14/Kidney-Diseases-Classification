@@ -1,0 +1,13 @@
+prefix=/home/yousef/Kidney-Diseases-Classification/.conda
+exec_prefix=/home/yousef/Kidney-Diseases-Classification/.conda
+libdir=/home/yousef/Kidney-Diseases-Classification/.conda/lib
+sharedlibdir=/home/yousef/Kidney-Diseases-Classification/.conda/lib
+includedir=/home/yousef/Kidney-Diseases-Classification/.conda/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
