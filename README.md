@@ -18,7 +18,6 @@ The model achieves robust performance in distinguishing between normal kidney ti
 ## 📑 Table of Contents
 
 - [🎯 Project Overview & Motivation](#-project-overview--motivation)
-- [🏥 Medical Context & Impact](#-medical-context--impact)
 - [📊 Dataset Information](#-dataset-information)
 - [🔬 Methodology & Approach](#-methodology--approach)
 - [🏗️ Project Structure](#️-project-structure)
@@ -26,12 +25,6 @@ The model achieves robust performance in distinguishing between normal kidney ti
 - [🚀 Usage Guide](#-usage-guide)
 - [📈 Results & Performance Analysis](#-results--performance-analysis)
 - [🛠️ Technologies & Libraries](#️-technologies--libraries)
-- [🔄 Future Improvements & Roadmap](#-future-improvements--roadmap)
-- [👥 Contributing Guidelines](#-contributing-guidelines)
-- [📝 Citation & References](#-citation--references)
-- [📜 License](#-license)
-- [🙏 Acknowledgments](#-acknowledgments)
-
 ---
 
 ## 🎯 Project Overview & Motivation
@@ -53,25 +46,6 @@ Our deep learning model provides:
 - Comprehensive preprocessing to handle varying image qualities
 
 ---
-
-## 🏥 Medical Context & Impact
-
-### Clinical Significance
-Kidney diseases are among the leading causes of mortality globally, with chronic kidney disease affecting approximately 10% of the world's population. Early and accurate detection can:
-- Enable timely intervention and treatment planning
-- Reduce healthcare costs through efficient screening
-- Improve patient prognosis and quality of life
-- Assist in areas with limited access to specialist radiologists
-
-### Ethical Considerations & Data Privacy
-This project adheres to strict ethical guidelines:
-- **Data Anonymization**: All patient identifiable information removed
-- **HIPAA Compliance**: Follows healthcare data protection standards
-- **Transparent AI**: Model decisions are interpretable through visualization
-- **Human-in-the-Loop**: Designed as a diagnostic aid, not replacement
-
-### Medical Validation
-The model's predictions are designed to complement, not replace, professional medical judgment. All diagnostic decisions should be validated by qualified healthcare professionals.
 
 ---
 
@@ -186,44 +160,18 @@ augmentation_config = {
 ---
 
 ## 🏗️ Project Structure
-
-```
+```bash
 Kidney-Diseases-Classification/
-│
-├── 📁 data/
-│   ├── raw/                    # Original DICOM files
-│   ├── processed/               # Preprocessed images
-│   └── augmented/              # Augmented training data
-│
-├── 📁 models/
-│   ├── checkpoints/            # Model checkpoints
-│   ├── final_model.h5          # Trained model
-│   └── model_architecture.json # Model configuration
-│
-├── 📁 notebooks/
-│   ├── 01_EDA.ipynb           # Exploratory Data Analysis
-│   ├── 02_Preprocessing.ipynb  # Data preprocessing pipeline
-│   ├── 03_Model_Training.ipynb # Model development
-│   └── 04_Evaluation.ipynb     # Performance analysis
-│
-├── 📁 src/
-│   ├── data_loader.py         # Data loading utilities
-│   ├── preprocessing.py       # Image preprocessing
-│   ├── model.py               # Model architecture
-│   ├── train.py               # Training pipeline
-│   ├── evaluate.py            # Evaluation metrics
-│   └── predict.py             # Inference pipeline
-│
-├── 📁 utils/
-│   ├── visualization.py       # Visualization tools
-│   └── metrics.py             # Custom metrics
-│
-├── 📁 tests/
-│   └── test_model.py          # Unit tests
-│
-├── requirements.txt            # Dependencies
-├── config.yaml                # Configuration file
-└── README.md                  # Documentation
+│── artifacts/                # Pipeline outputs
+│── configs/                  # Config files
+│── src/cnnClassifier/        # Core ML pipeline modules
+│   ├── pipeline/             # Stage-wise scripts
+│   ├── config/               # Configurations
+│   ├── components/           # Model components
+│── dvc.yaml                  # DVC pipeline
+│── params.yaml               # Hyperparameters
+│── requirements.txt          # Dependencies
+│── README.md                 # Project documentation
 ```
 
 ---
@@ -394,74 +342,6 @@ The model demonstrates excellent convergence with minimal overfitting, as eviden
 
 ---
 
-## 🔄 Future Improvements & Roadmap
-
-### Short-term Goals (3-6 months)
-- [ ] Implement attention mechanisms for interpretability
-- [ ] Add support for 3D volumetric CT scans
-- [ ] Develop mobile-friendly inference API
-- [ ] Integrate Grad-CAM for visual explanations
-
-### Long-term Vision (6-12 months)
-- [ ] Multi-modal learning (CT + clinical data)
-- [ ] Federated learning for privacy-preserving training
-- [ ] Real-time inference optimization
-- [ ] Clinical trial partnership for validation
-- [ ] FDA approval pathway exploration
-
-### Research Directions
-- Investigating transformer-based architectures
-- Semi-supervised learning for limited labeled data
-- Domain adaptation for different scanner types
-- Uncertainty quantification in predictions
-
----
-
-## 👥 Contributing Guidelines
-
-We welcome contributions from the community! Please read our contributing guidelines before submitting pull requests.
-
-### How to Contribute
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Code Standards
-- Follow PEP 8 style guidelines
-- Include docstrings for all functions
-- Add unit tests for new features
-- Update documentation as needed
-
-### Reporting Issues
-Please use the GitHub Issues tracker to report bugs or request features. Include:
-- Detailed description of the issue
-- Steps to reproduce
-- Expected vs actual behavior
-- System information
-
----
-
-## 📝 Citation & References
-
-If you use this project in your research, please cite:
-
-```bibtex
-@software{kidney_disease_classification_2024,
-  author = {Yousef R.},
-  title = {Kidney Disease Classification Using Deep Learning},
-  year = {2024},
-  url = {https://github.com/yousefre14/Kidney-Diseases-Classification}
-}
-```
-
-### Key References
-1. Ronneberger, O., Fischer, P., & Brox, T. (2015). U-Net: Convolutional Networks for Biomedical Image Segmentation.
-2. He, K., Zhang, X., Ren, S., & Sun, J. (2016). Deep Residual Learning for Image Recognition.
-3. Litjens, G., et al. (2017). A Survey on Deep Learning in Medical Image Analysis.
-
----
 
 ## 📜 License
 
@@ -476,39 +356,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction...
 ```
-
----
-
-## 🙏 Acknowledgments
-
-### Special Thanks
-- Medical professionals who provided domain expertise and validation
-- Open-source community for invaluable tools and libraries
-- Research papers and authors whose work inspired this project
-- Contributors and testers who helped improve the system
-
-### Institutional Support
-- Dataset providers for making medical imaging data accessible
-- Computational resources for model training and experimentation
-
----
-
-<p align="center">
-  <b>⚕️ Advancing Healthcare Through Artificial Intelligence ⚕️</b>
-</p>
-
-<p align="center">
-  <i>This project demonstrates the potential of AI in medical diagnostics while maintaining the highest standards of accuracy, ethics, and patient safety.</i>
-</p>
-
-<p align="center">
-  <a href="https://github.com/yousefre14/Kidney-Diseases-Classification/issues">Report Bug</a> •
-  <a href="https://github.com/yousefre14/Kidney-Diseases-Classification/issues">Request Feature</a> •
-  <a href="mailto:your.email@example.com">Contact</a>
-</p>
-
----
-
-<p align="center">
-  Made with ❤️ for the medical AI community
-</p>
