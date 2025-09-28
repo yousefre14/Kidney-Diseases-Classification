@@ -47,8 +47,6 @@ my deep learning model provides:
 
 ---
 
----
-
 ## 📊 Dataset Information
 
 ### Dataset Overview
@@ -210,6 +208,7 @@ python -m pytest tests/
 3. dvc dag
 
 ```
+------
 ```
 
 ## 📈 Results & Performance Analysis
