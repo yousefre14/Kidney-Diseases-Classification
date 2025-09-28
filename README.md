@@ -269,20 +269,13 @@ python main.py predict --image path/to/image.png --model models/kidney_classifie
 ### Confusion Matrix
 ```
          Predicted
-         N    C    S    T
-Actual N [746  10   3    2]
-       C [12  517  18   9]
-       S [4   21  195  7]
-       T [5    8   11  329]
+         N       T
+Actual N [746    2]
+       T [5    329]
 ```
 
 ### Learning Curves
 The model demonstrates excellent convergence with minimal overfitting, as evidenced by closely tracking training and validation curves throughout the training process.
-
-### Statistical Validation
-- **McNemar's Test**: p-value < 0.001 (significant improvement over baseline)
-- **Cohen's Kappa**: 0.943 (almost perfect agreement)
-- **Matthews Correlation Coefficient**: 0.941
 
 ---
 
