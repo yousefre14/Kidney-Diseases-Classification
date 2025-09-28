@@ -60,7 +60,7 @@ The project utilizes a comprehensive dataset of kidney CT scan images, carefully
 #### Dataset Statistics
 - **Total Images**: 12,446 CT scan images
 - **Image Resolution**: 512x512 pixels
-- **Format**: DICOM converted to PNG
+- **Format**: jpg
 - **Classes Distribution**:
   - Normal: 5,077 images (40.8%)
   - Tumor: 7,368 images (59.2%)
