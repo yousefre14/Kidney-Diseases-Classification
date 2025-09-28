@@ -1,6 +1,5 @@
 artifacts_root: /home/yousef/Kidney-Diseases-Classification/artifacts
 
-
 data_ingestion:
   root_dir: ./artifacts/data_ingestion
   source_URL: https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing
@@ -16,3 +15,13 @@ training:
   root_dir: ./artifacts/training
   trained_model_path: ./artifacts/training/model.h5
   training_data: ./artifacts/data_ingestion/kidney-ct-scan-dataset
+
+evaluation:
+  root_dir: ./artifacts/evaluation
+  trained_model_path: ./artifacts/training/model.h5   # <-- use trained model
+  test_data: ./artifacts/data_ingestion/kidney-ct-scan-dataset/test  # <-- add test set
+  metrics_file: ./artifacts/evaluation/metrics.json   # <-- save metrics here
+  mlflow_uri: https://831e4988b7ed7c07fef99e112034680d2f64c41b@dagshub.com/yousefre14/Kidney-Diseases-Classification
+  experiment_name: KidneyDiseaseClassification
+  model_name: KidneyDiseaseClassificationModel
+  
