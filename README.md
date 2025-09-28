@@ -34,7 +34,7 @@ Kidney diseases affect millions worldwide, with early detection being crucial fo
 
 ### Solution Approach
 my deep learning model provides:
-- **Automated Classification**: Four-class classification (Normal, Cyst, Stone, Tumor)
+- **Automated Classification**: Two-class classification (Normal, Tumor)
 - **High Accuracy**: Achieved >95% accuracy on validation dataset
 - **Rapid Processing**: Sub-second inference time per image
 - **Scalable Architecture**: Easily deployable in clinical settings
