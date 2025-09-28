@@ -22,7 +22,7 @@ The model achieves robust performance in distinguishing between normal kidney ti
 - [🔬 Methodology & Approach](#-methodology--approach)
 - [🏗️ Project Structure](#️-project-structure)
 - [⚙️ Installation & Setup](#️-installation--setup)
-- [🚀 Usage Guide](#-usage-guide)
+- [Workflow](#-Workflow)
 - [📈 Results & Performance Analysis](#-results--performance-analysis)
 - [🛠️ Technologies & Libraries](#️-technologies--libraries)
 ---
@@ -190,54 +190,25 @@ python -m pytest tests/
 
 ---
 
-## 🚀 Usage Guide
+## Workflows
 
-### Quick Start
+1. Update config.yaml
+2. Update params.yaml
+3. Update the entity
+4. Update the configuration manager in src config
+5. Update the components
+6. Update the pipeline 
+7. Update the main.py
+8. Update the dvc.yaml
+9. app.py
 
-#### Training a New Model
-```python
-from src.train import TrainingPipeline
 
-# Initialize training pipeline
-pipeline = TrainingPipeline(config_path='config.yaml')
+### DVC cmd
 
-# Start training
-model = pipeline.train(
-    epochs=100,
-    batch_size=32,
-    validation_split=0.15
-)
+1. dvc init
+2. dvc repro
+3. dvc dag
 
-# Save model
-model.save('models/kidney_classifier.h5')
-```
-
-#### Making Predictions
-```python
-from src.predict import KidneyClassifier
-
-# Load trained model
-classifier = KidneyClassifier('models/kidney_classifier.h5')
-
-# Predict single image
-result = classifier.predict('path/to/ct_scan.png')
-print(f"Prediction: {result['class']}")
-print(f"Confidence: {result['confidence']:.2%}")
-
-# Batch prediction
-results = classifier.predict_batch(['image1.png', 'image2.png'])
-```
-
-### Command Line Interface
-```bash
-# Train model
-python main.py train --epochs 100 --batch-size 32
-
-# Evaluate model
-python main.py evaluate --model models/kidney_classifier.h5
-
-# Predict
-python main.py predict --image path/to/image.png --model models/kidney_classifier.h5
 ```
 
 ---
