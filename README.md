@@ -80,16 +80,6 @@ The project utilizes a comprehensive dataset of kidney CT scan images, carefully
 
 </details>
 
-### Preprocessing Pipeline
-```python
-# Preprocessing steps applied to each image
-1. DICOM to PNG conversion
-2. Histogram equalization for contrast enhancement
-3. Noise reduction using Gaussian filtering
-4. Normalization to [0,1] range
-5. Resizing to standard dimensions (224x224)
-6. Data augmentation for training set
-```
 
 ---
 
