@@ -17,14 +17,14 @@ The model achieves robust performance in distinguishing between normal kidney ti
 
 ## 📑 Table of Contents
 
-- [🎯 Project Overview & Motivation](#-project-overview--motivation)
-- [📊 Dataset Information](#-dataset-information)
-- [🔬 Methodology & Approach](#-methodology--approach)
-- [🏗️ Project Structure](#️-project-structure)
-- [⚙️ Installation & Setup](#️-installation--setup)
+- [ Project Overview & Motivation](#-project-overview--motivation)
+- [ Dataset Information](#-dataset-information)
+- [ Methodology & Approach](#-methodology--approach)
+- [ Project Structure](#️-project-structure)
+- [ Installation & Setup](#️-installation--setup)
 - [Workflow](#-Workflow)
-- [📈 Results & Performance Analysis](#-results--performance-analysis)
-- [🛠️ Technologies & Libraries](#️-technologies--libraries)
+- [ Results & Performance Analysis](#-results--performance-analysis)
+- [ Technologies & Libraries](#️-technologies--libraries)
 ---
 
 ## 🎯 Project Overview & Motivation
