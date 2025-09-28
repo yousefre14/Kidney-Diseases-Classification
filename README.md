@@ -63,9 +63,7 @@ The project utilizes a comprehensive dataset of kidney CT scan images, carefully
 - **Format**: DICOM converted to PNG
 - **Classes Distribution**:
   - Normal: 5,077 images (40.8%)
-  - Cyst: 3,709 images (29.8%)
-  - Stone: 1,377 images (11.1%)
-  - Tumor: 2,283 images (18.3%)
+  - Tumor: 7,368 images (59.2%)
 
 #### Data Split Strategy
 ```
@@ -287,8 +285,6 @@ python main.py predict --image path/to/image.png --model models/kidney_classifie
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
 | Normal | 0.97 | 0.98 | 0.97 | 761 |
-| Cyst | 0.94 | 0.93 | 0.93 | 556 |
-| Stone | 0.93 | 0.94 | 0.93 | 207 |
 | Tumor | 0.95 | 0.96 | 0.95 | 343 |
 
 </details>
@@ -326,12 +322,8 @@ The model demonstrates excellent convergence with minimal overfitting, as eviden
 ### Visualization & Analysis
 - **Matplotlib**: Plotting and visualization
 - **Seaborn**: Statistical data visualization
-- **Plotly**: Interactive visualizations
-- **TensorBoard**: Model training visualization
 
 ### Medical Image Processing
-- **SimpleITK**: Medical image processing
-- **Pydicom**: DICOM file handling
 - **Scikit-image**: Image processing algorithms
 
 ### Development Tools
