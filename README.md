@@ -207,9 +207,6 @@ python -m pytest tests/
 2. dvc repro
 3. dvc dag
 
-```
-------
-```
 
 ## 📈 Results & Performance Analysis
 
