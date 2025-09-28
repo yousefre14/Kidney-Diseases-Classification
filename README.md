@@ -33,7 +33,7 @@ The model achieves robust performance in distinguishing between normal kidney ti
 Kidney diseases affect millions worldwide, with early detection being crucial for effective treatment. Traditional diagnostic methods rely heavily on manual interpretation of medical images by radiologists, which can be time-consuming and subject to human error. This project addresses these challenges by developing an automated, accurate, and efficient classification system.
 
 ### Solution Approach
-Our deep learning model provides:
+my deep learning model provides:
 - **Automated Classification**: Four-class classification (Normal, Cyst, Stone, Tumor)
 - **High Accuracy**: Achieved >95% accuracy on validation dataset
 - **Rapid Processing**: Sub-second inference time per image
