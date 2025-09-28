@@ -71,13 +71,6 @@ The project utilizes a comprehensive dataset of kidney CT scan images, carefully
 ├── Validation Set: 15% (1,867 images)
 └── Test Set: 15% (1,867 images)
 ```
-
-#### Quality Assurance
-- Manual verification by medical professionals
-- Automated quality checks for image integrity
-- Balanced sampling to address class imbalance
-- Cross-validation with stratified splits
-
 </details>
 
 
@@ -139,12 +132,6 @@ augmentation_config = {
     'brightness_range': [0.8, 1.2]
 }
 ```
-
-### Cross-Validation Strategy
-- 5-fold stratified cross-validation
-- Ensemble predictions from multiple folds
-- Statistical significance testing using paired t-tests
-
 ---
 
 ## 🏗️ Project Structure
