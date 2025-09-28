@@ -11,7 +11,7 @@
 
 This project represents a cutting-edge application of deep learning in medical imaging, specifically designed to classify kidney diseases from CT scan images with high precision. By leveraging advanced Convolutional Neural Networks (CNNs) and state-of-the-art image processing techniques, this system demonstrates the potential of artificial intelligence to augment medical diagnostics, potentially reducing diagnosis time and improving patient outcomes.
 
-The model achieves robust performance in distinguishing between normal kidney tissue, cysts, stones, and tumors, offering a valuable tool for radiologists and healthcare professionals in preliminary screening and diagnostic assistance.
+The model achieves robust performance in distinguishing between normal kidney tissue and tumors, offering a valuable tool for radiologists and healthcare professionals in preliminary screening and diagnostic assistance.
 
 ---
 
