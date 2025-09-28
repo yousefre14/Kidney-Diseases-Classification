@@ -211,7 +211,6 @@ python -m pytest tests/
 
 ```
 ```
----
 
 ## 📈 Results & Performance Analysis
 
