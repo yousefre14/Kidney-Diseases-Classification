@@ -548,3 +548,59 @@ x==========x]
 [2025-09-24 21:22:42,827: INFO: main: >>>>>> MLflow Model Evaluation Phase completed <<<<<<
 
 x==========x]
+[2025-09-28 14:22:43,551: INFO: Phase_00_data_ingestion: >>>>>> Data Ingestion Phase started <<<<<<]
+[2025-09-28 14:22:43,580: INFO: common: yaml file: /home/yousef/Kidney-Diseases-Classification/configs/config.yaml loaded successfully]
+[2025-09-28 14:22:43,603: INFO: common: yaml file: /home/yousef/Kidney-Diseases-Classification/params.yaml loaded successfully]
+[2025-09-28 14:22:43,603: INFO: common: created directory at: /home/yousef/Kidney-Diseases-Classification/artifacts]
+[2025-09-28 14:22:43,604: INFO: common: created directory at: ./artifacts/data_ingestion]
+[2025-09-28 14:22:43,604: INFO: data_ingestion: Downloading file from :[https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing] into :[artifacts/data_ingestion/data.zip]]
+[2025-09-28 14:23:08,085: INFO: data_ingestion: File :[artifacts/data_ingestion/data.zip] has been downloaded successfully.]
+[2025-09-28 14:23:08,086: INFO: data_ingestion: Unzipping file :[artifacts/data_ingestion/data.zip] into dir :[artifacts/data_ingestion]]
+[2025-09-28 14:23:08,474: INFO: data_ingestion: Unzipping completed successfully. and data is available at :[artifacts/data_ingestion]]
+[2025-09-28 14:23:08,474: INFO: Phase_00_data_ingestion: >>>>>> Data Ingestion Phase completed <<<<<<
+
+x==========x]
+[2025-09-28 14:25:58,844: INFO: Phase_01_prepare_base_model: >>>>>> Prepare Base Model Phase started <<<<<<]
+[2025-09-28 14:25:58,852: INFO: common: yaml file: /home/yousef/Kidney-Diseases-Classification/configs/config.yaml loaded successfully]
+[2025-09-28 14:25:58,856: INFO: common: yaml file: /home/yousef/Kidney-Diseases-Classification/params.yaml loaded successfully]
+[2025-09-28 14:25:58,857: INFO: common: created directory at: /home/yousef/Kidney-Diseases-Classification/artifacts]
+[2025-09-28 14:25:58,857: INFO: common: created directory at: ./artifacts/prepare_base_model]
+[2025-09-28 14:25:59,892: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-09-28 14:25:59,976: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-09-28 14:26:00,035: INFO: Phase_01_prepare_base_model: >>>>>> Prepare Base Model Phase completed <<<<<<
+
+x==========x]
+[2025-09-28 14:26:04,001: INFO: Phase_02_model_training: >>>>>>>>>> Stage Model Training Stage started <<<<<<<<<<]
+[2025-09-28 14:26:04,003: INFO: common: yaml file: /home/yousef/Kidney-Diseases-Classification/configs/config.yaml loaded successfully]
+[2025-09-28 14:26:04,004: INFO: common: yaml file: /home/yousef/Kidney-Diseases-Classification/params.yaml loaded successfully]
+[2025-09-28 14:26:04,005: INFO: common: created directory at: /home/yousef/Kidney-Diseases-Classification/artifacts]
+[2025-09-28 14:26:04,005: INFO: common: created directory at: artifacts/training]
+[2025-09-28 14:26:04,184: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-09-28 14:32:56,308: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-09-28 14:32:56,391: INFO: Phase_02_model_training: >>>>>>>>>> Stage Model Training Stage completed <<<<<<<<<<
+
+x==========x]
+[2025-09-28 15:57:41,619: INFO: Phase_03_mlflow_evalution: >>>>>>>>>> Stage MLflow Model Evaluation Stage started <<<<<<<<<<]
+[2025-09-28 15:57:41,621: INFO: common: yaml file: /home/yousef/Kidney-Diseases-Classification/configs/config.yaml loaded successfully]
+[2025-09-28 15:57:41,622: INFO: common: yaml file: /home/yousef/Kidney-Diseases-Classification/params.yaml loaded successfully]
+[2025-09-28 15:57:41,622: INFO: common: created directory at: /home/yousef/Kidney-Diseases-Classification/artifacts]
+[2025-09-28 15:57:41,805: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-09-28 16:07:17,126: INFO: Phase_03_mlflow_evalution: >>>>>>>>>> Stage MLflow Model Evaluation Stage completed <<<<<<<<<<
+
+x==========x]
+[2025-09-28 16:07:56,686: INFO: Phase_03_mlflow_evalution: >>>>>>>>>> Stage MLflow Model Evaluation Stage started <<<<<<<<<<]
+[2025-09-28 16:07:56,688: INFO: common: yaml file: /home/yousef/Kidney-Diseases-Classification/configs/config.yaml loaded successfully]
+[2025-09-28 16:07:56,689: INFO: common: yaml file: /home/yousef/Kidney-Diseases-Classification/params.yaml loaded successfully]
+[2025-09-28 16:07:56,689: INFO: common: created directory at: /home/yousef/Kidney-Diseases-Classification/artifacts]
+[2025-09-28 16:07:56,883: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-09-28 16:18:15,525: INFO: Phase_03_mlflow_evalution: >>>>>>>>>> Stage MLflow Model Evaluation Stage completed <<<<<<<<<<
+
+x==========x]
+[2025-09-28 16:43:42,334: INFO: Phase_03_mlflow_evalution: >>>>>>>>>> Stage MLflow Model Evaluation Stage started <<<<<<<<<<]
+[2025-09-28 16:43:42,336: INFO: common: yaml file: /home/yousef/Kidney-Diseases-Classification/configs/config.yaml loaded successfully]
+[2025-09-28 16:43:42,336: INFO: common: yaml file: /home/yousef/Kidney-Diseases-Classification/params.yaml loaded successfully]
+[2025-09-28 16:43:42,337: INFO: common: created directory at: /home/yousef/Kidney-Diseases-Classification/artifacts]
+[2025-09-28 16:43:42,474: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-09-28 16:53:12,318: INFO: Phase_03_mlflow_evalution: >>>>>>>>>> Stage MLflow Model Evaluation Stage completed <<<<<<<<<<
+
+x==========x]
