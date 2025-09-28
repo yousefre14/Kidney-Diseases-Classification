@@ -2,11 +2,9 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
-[![CI/CD](https://github.com/your-username/Kidney-Disease-Classification-MLflow-DVC/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/your-username/Kidney-Disease-Classification-MLflow-DVC/actions)
 [![MLflow](https://img.shields.io/badge/Tracking-MLflow-blue)](https://mlflow.org/)
 [![DVC](https://img.shields.io/badge/Data%20Versioning-DVC-orange)](https://dvc.org/)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Medical AI](https://img.shields.io/badge/Medical-AI-red)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-CNN-purple)
 
 ## 📋 Executive Summary
